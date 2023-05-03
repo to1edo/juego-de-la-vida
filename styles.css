@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+  background-color: #1f2947;
+  color: white
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+h1{
+  text-align: center;
+  margin-top: 1rem;
+}
+h1 span{
+  text-transform: uppercase;
+  color: #20a4d8;
+}
+.medidasInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 2rem;
+}
+.medidasInput input{
+  padding: 5px;
+  width: 110px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+}
+
+#grid{
+  margin: auto;
+  display: inline-block;
+  width: 80vw;
+  height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 720px) {
+  #grid{
+    width: 60vw;
+  }
+}
+
+.fila{
+  width: 100%;
+  margin: 0;
+  margin-bottom: -3px;
+  padding: 0;
+  display: flex;
+  flex-grow: 1;
+}
+
+.celda{
+  display: inline-block;
+  border: 1px solid black;
+  background-color: #271a21;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.celda.viva{
+  background-color: #20a4d8;
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+.botones input{
+  cursor: pointer;
+  padding: 5px;
+  background-color: #20a4d8;
+  border:none;
+  color: white;
+  font: bold;
+  border-radius: 5px;
+}
+
+.botones input:disabled{
+  background-color: gray;
+
+}
