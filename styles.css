@@ -39,7 +39,7 @@ h1 span{
   margin: auto;
   display: inline-block;
   width: 80vw;
-  height: 70vh;
+  height: 60vh;
 
   display: flex;
   flex-direction: column;
@@ -75,7 +75,7 @@ h1 span{
 .botones{
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 3px;
   gap: 2rem;
 }
 .botones input{
@@ -91,4 +91,11 @@ h1 span{
 .botones input:disabled{
   background-color: gray;
 
+}
+
+.tip{
+  margin: 0;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 12px;
 }
